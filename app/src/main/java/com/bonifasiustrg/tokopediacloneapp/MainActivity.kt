@@ -1,4 +1,4 @@
-package com.bonifasiustrg.tokopediacloneapp
+package  com.bonifasiustrg.tokopediacloneapp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
