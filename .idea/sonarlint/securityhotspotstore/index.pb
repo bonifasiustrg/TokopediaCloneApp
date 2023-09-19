@@ -13,8 +13,6 @@ w
 Gapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListItem.kt,3/c/3c994cf00708266f42c59edd0f9948781d835ff5
 z
 Japp/src/main/java/com/bonifasiustrg/tokopediacloneapp/utils/GenerateKey.kt,5/b/5be6815617f482c2056d541da8f27d2fba721209
-Å
-Qapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListBottomCategory.kt,5/7/57addb45c9636aeaa87bb39ccaba49894498f30f
 
 Oapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListSpecialOffer.kt,2/6/266126ed7753fd3f866b6ff717d2879ebe177a08
 ~
@@ -27,5 +25,3 @@ Lapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/BottomBarItem.kt,f
 Kapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListDiscount.kt,7/1/71eee47f602417b991adbb1d5460ff10ea4d6a3e
 y
 Iapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListTopBar.kt,a/e/ae24eafa18dab427ca1ed74a0e9a8327ad89780d
-y
-Iapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListBanner.kt,e/0/e06b7227550fce863994fcf85113f780584a3cfe

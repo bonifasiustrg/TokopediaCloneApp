@@ -13,10 +13,6 @@ Gapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/ui/theme/Color.kt,c/8/c8
 Lapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/BottomBarItem.kt,f/9/f98d20c15bdfe06c11e54412dd1522b5d291df8f
 z
 Japp/src/main/java/com/bonifasiustrg/tokopediacloneapp/utils/GenerateKey.kt,5/b/5be6815617f482c2056d541da8f27d2fba721209
-y
-Iapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListBanner.kt,e/0/e06b7227550fce863994fcf85113f780584a3cfe
-Å
-Qapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListBottomCategory.kt,5/7/57addb45c9636aeaa87bb39ccaba49894498f30f
 }
 Mapp/src/main/java/com/bonifasiustrg/tokopediacloneapp/model/ListCardForYou.kt,f/4/f4d10b9992f0d9d7a6f072738a6e09a6382e5675
 {
