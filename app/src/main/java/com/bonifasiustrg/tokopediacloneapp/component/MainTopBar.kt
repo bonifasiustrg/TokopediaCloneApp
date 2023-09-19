@@ -1,9 +1,12 @@
 package com.bonifasiustrg.tokopediacloneapp.component
 
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Arrangement.spacedBy
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
@@ -23,6 +26,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
+import androidx.compose.ui.Alignment.Companion.CenterVertically
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
@@ -34,7 +38,7 @@ fun MainTopBar(modifier: Modifier = Modifier) {
     Column(modifier = modifier.padding(16.dp)) {
         Row(modifier = modifier.width(IntrinsicSize.Min),
             verticalAlignment = Alignment.CenterVertically,
-            horizontalArrangement = Arrangement.SpaceBetween
+            horizontalArrangement = spacedBy(8.dp)
         ){
             OutlinedTextField(
                 value = "",
@@ -42,8 +46,8 @@ fun MainTopBar(modifier: Modifier = Modifier) {
 
                 },
                 leadingIcon = { Icon(imageVector = Icons.Outlined.Search, contentDescription = null) },
-                placeholder = { Text(text = "Search here") },
-                modifier = modifier.widthIn(min = 200.dp),
+                placeholder = { Text(text = "Search here", fontSize = 12.sp) },
+                modifier = modifier.weight(1f).height(44.dp).align(CenterVertically),
                 shape = RoundedCornerShape(16.dp)
             )
 
@@ -60,7 +64,7 @@ fun MainTopBar(modifier: Modifier = Modifier) {
                 contentDescription = null
             )
             Icon(imageVector = Icons.Outlined.Menu,
-                modifier = modifier.size(36.dp),
+                modifier = modifier.size(30.dp),
                 contentDescription = null
             )
         }

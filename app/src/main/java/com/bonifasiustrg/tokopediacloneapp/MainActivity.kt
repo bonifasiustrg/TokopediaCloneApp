@@ -15,8 +15,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Devices
 import androidx.compose.ui.tooling.preview.Preview
+import com.bonifasiustrg.tokopediacloneapp.component.BottomCategory
+import com.bonifasiustrg.tokopediacloneapp.component.CardCategory
 import com.bonifasiustrg.tokopediacloneapp.component.MainTopBar
+import com.bonifasiustrg.tokopediacloneapp.component.TopCategory
 import com.bonifasiustrg.tokopediacloneapp.component.TopMenu
+import com.bonifasiustrg.tokopediacloneapp.model.dummyListBanner
+import com.bonifasiustrg.tokopediacloneapp.model.dummyListBottomCategory
+import com.bonifasiustrg.tokopediacloneapp.model.dummyListTopCategory
 import com.bonifasiustrg.tokopediacloneapp.model.dummyListTopMenu
 import com.bonifasiustrg.tokopediacloneapp.ui.theme.TokopediaCloneAppTheme
 
@@ -45,10 +51,14 @@ fun MarketApp(modifier: Modifier = Modifier) {
             .verticalScroll(rememberScrollState())
     ) {
 //        your code compose here
-        Column {
+        Column() {
 
             MainTopBar()
             MainTopMenu()
+            MainCategoryTop()
+            MainCategoryCard()
+            MainCategoryBottom()
+
         }
     }
 
@@ -62,6 +72,55 @@ fun MainTopMenu() {
         }
     }
 }
+
+@Composable
+fun MainCategoryTop() {
+    LazyRow() {
+        items(dummyListTopCategory) {
+            TopCategory(listTopCategory = it)
+        }
+    }
+}
+
+@Composable
+fun MainCategoryCard() {
+    LazyRow() {
+        items(dummyListBanner) {
+            CardCategory(listBanner = it)
+        }
+    }
+}
+@Composable
+fun MainCategoryBottom() {
+    LazyRow() {
+        items(dummyListBottomCategory) {
+            BottomCategory(listBottomCategory = it)
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun MainTopCategoryPrev() {
+    TokopediaCloneAppTheme {
+        MainCategoryTop()
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun MainBottomCategoryPrev() {
+    TokopediaCloneAppTheme {
+        MainCategoryBottom()
+    }
+}
+@Preview(showBackground = true)
+@Composable
+fun MainCategoryCardPrev() {
+    TokopediaCloneAppTheme {
+        MainCategoryCard()
+    }
+}
+
 @Preview(showBackground = true)
 @Composable
 fun MainTopMenuPrev() {
